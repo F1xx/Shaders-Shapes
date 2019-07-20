@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{212ccc9f-e135-4e64-9a64-ce0143e4b0fe}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\DeathEvent.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\EventManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\FrameworkPCH.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameCore\GameCore.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GL\GLHelpers.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\InputEvent.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Math\MyMatrix.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Memory\Memory.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\TimedEvent.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Utility\Helpers.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Utility\ShaderProgram.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\WinEvent.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Constants.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\DeathEvent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Event.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\EventManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\FrameworkPCH.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameCore\GameCore.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GL\GLHelpers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\InputEvent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Math\MathHelpers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Math\MyMatrix.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Math\Vector.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Memory\Memory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\TimedEvent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Utility\CPPList.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Utility\Helpers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Utility\ShaderProgram.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\WinEvent.h" />
+  </ItemGroup>
+</Project>

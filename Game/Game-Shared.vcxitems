@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{04735107-3ecb-4bb0-986f-ab19fcf6073a}</ItemsProjectGuid>
+    <ItemsProjectName>Game-Shared</ItemsProjectName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameConstants.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GamePCH.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\Camera.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\Color.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\Enemy.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\Game.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\GameObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\HUDObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\Mesh.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\ObjectiveObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\Player.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\PlayerController.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\Timer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GamePCH.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Game\Camera.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Game\Enemy.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Game\Game.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Game\GameObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Game\HUDObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Game\Mesh.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Game\ObjectiveObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Game\Player.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Game\PlayerController.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Game\Timer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\2DHexSmooth.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Angels.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\BokehBlur.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\City.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Color.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Color.vert" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\CubesAndSpheres.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\FluxCore.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\MengerJourney.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\MetaHexaBalls.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\PyroclasticExplosion.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\RollingHills.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\TheInversionMachine.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\TheRoadToHell.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\TruchetTentacles.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\WormsAntialiasing.frag" />
+  </ItemGroup>
+</Project>
